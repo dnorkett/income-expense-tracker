@@ -1,0 +1,154 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+ }
+
+.container {
+    min-height: 100vh;    
+    margin: 0;
+    padding:0;
+}
+
+.header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 35vh;
+    background-color: rgb(12, 107, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+}
+
+.header .budgetHeading {
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.header #budgetAmount {
+    color: white;
+    font-size: 3rem;
+}
+
+.incomeTotal {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #28B9B5;
+    padding: 12px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.expensesTotal {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;   
+    background-color: #FF5049; 
+    padding: 12px;
+}
+
+.amountContainer {
+    display: flex;
+    justify-content: flex-end;    
+    width: 250px;    
+}
+
+.percentCalc {    
+    width: 50px;    
+    text-align: right;
+}
+
+#percentCalcValue {    
+    font-size: .6rem;    
+    color: white;
+}
+
+.addBudgetItem {
+    background-color: rgb(236, 236, 236);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.addBudgetItem > * {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border:none;
+    font-size: 1rem;
+}
+
+.submitButton {
+    color: rgb(15, 185, 0);
+    font-size: 1.5rem;
+}
+
+.addBudgetItem > input[type="number"] {
+    width:125px;
+ }
+
+ .recordContainer {     
+     width: 45%;
+     margin: 0 auto;     
+ }
+
+ .recordContainer .incomeLabel {
+     color: #28B9B5;
+     padding: 5px;
+     margin-top: 30px;
+     margin-bottom: 15px;
+ }
+
+ .recordContainer .expensesLabel {
+    color: #FF5049; ;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+ }
+
+ .income {
+     float:left;     
+     width: 47%;
+     text-align: center;
+ }
+
+ .expenses {
+    float:right;    
+    width: 47%;
+    text-align: center;
+}
+
+.recordItems {
+    list-style: none;    
+}
+
+.recordItems>li:nth-child(even) {
+    background-color: rgb(236, 236, 236);
+}
+
+.incomeItem {
+    display: flex;
+    justify-content: space-between;    
+    padding: 10px;
+    border-top: 1px dotted rgb(197, 197, 197);    
+}
+
+.incomeItem :nth-child(2) {
+    color: #28B9B5;
+}
+
+.expenseItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px dotted rgb(197, 197, 197);    
+}
+
+.expenseItem :nth-child(2) {
+    color: #FF5049;
+}

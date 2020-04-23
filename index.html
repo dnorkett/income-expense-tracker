@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ed43c50f83.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <p class="budgetHeading">Available Budget in <span id="month"></span>, <span id="year"></span></p>
+            <p id="budgetAmount">-0.00</p>
+            <div class="totals">
+                <div class="incomeTotal">
+                    <p class="label">Income</p>
+                    <div class="amountContainer">
+                        <p class="incomeAmount">+ 0.00</p>
+                        <p class="percentCalc"> </p>
+                    </div>
+                </div>
+                <div class="expensesTotal">
+                    <p class="label">Expenses</p>
+                    <div class="amountContainer">
+                        <p class="expensesAmount">- 0.00</p>
+                        <p class="percentCalc" id="percentCalcValue">---</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="addBudgetItem">
+            <select name="valueSign" id="valueSign">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+            <input type="text" name="description" id="description" placeholder="Add description" size="40">
+            <input type="number" name="amount" id="amount" placeholder="Value" autocomplete="off" >
+            <button class="submitButton"><i class="far fa-check-circle"></i></button>
+        </section>
+        <div class="recordContainer">
+            <div class="income">
+                <h3 class='incomeLabel'>Income</h3>
+                <ul class="recordItems incomeItems"></ul>
+            </div>
+            <div class="expenses">
+                <h3 class='expensesLabel'>Expenses</h3>
+                <ul class="recordItems expenseItems"></ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <script src="js/budgetApp.js"></script>
+</body>
+</html>
